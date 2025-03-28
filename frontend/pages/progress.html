@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Progress</title>
+    <link rel="stylesheet" href="../css/styles/features.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Student Progress</div>
+        <div class="nav-user">
+            <span id="username"></span>
+            <button onclick="location.href='dashboard.html'">Back to Dashboard</button>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="progress-stats">
+            <div class="stat-card">
+                <h3>Quizzes Completed</h3>
+                <div id="quizCount">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Average Score</h3>
+                <div id="avgScore">0%</div>
+            </div>
+            <div class="stat-card">
+                <h3>Bloom's Level Progress</h3>
+                <div id="bloomsProgress"></div>
+            </div>
+        </div>
+        <div class="progress-history">
+            <h3>Recent Activities</h3>
+            <div id="activityList"></div>
+        </div>
+    </div>
+    <script src="../js/scripts/progress.js"></script>
+</body>
+</html>
