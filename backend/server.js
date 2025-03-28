@@ -26,7 +26,7 @@ app.use('/api/quiz', quizRoutes);
 
 
 app.get('/', (req, res) => {
-  rs.send({
+  res.send({
     activeStatus: true,
     error:false,
   })
