@@ -24,6 +24,14 @@ app.use('/api/users', userRoutes);
 app.use('/api/search', searchRoutes);
 app.use('/api/quiz', quizRoutes);
 
+
+app.get('/', (req, res) => {
+  rs.send({
+    activeStatus: true,
+    error:false,
+  })
+})
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
